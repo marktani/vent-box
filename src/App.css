@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+  font-family: B612;
+}
+
+.label {
+  pointer-events: none;
+  color: black;
+  position: absolute;
+  top: 80px;
+
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  animation-iteration-count: infinite;
+}
+
+.App-header {
+  background-color: #4e878c;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes shake {
+  3% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  6% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  9% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  12% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  15% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
